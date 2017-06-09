@@ -5,3 +5,4 @@ Assigments around argc and argv[]
 2- Write a program that prints all arguments it receives.
 3- Write a program that multiplies two numbers.
 4- Write a program that adds positive numbers.
+5-Write a program that prints the minimum number of coins to make change for an amount of money.
