@@ -1,12 +1,13 @@
 #include "holberton.h"
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
 
-int main(void)
+/**
+ * print_alphabet - print alphabet
+ */
+void print_alphabet(void)
 {
-print_alphabet();
-return (0);
+	char az;
+
+	for (az = 'a'; az <= 'z'; az++)
+		_putchar(az);
+	_putchar('\n');
 }
