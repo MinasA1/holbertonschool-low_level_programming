@@ -2,15 +2,15 @@
 #define _DOG_H_
 
 /**
- * struct dog - Saves a dog 
+ * struct dog - Saves a dog
  * @name: dogs name
  * @age: dogs age
  * @owner: dogs owner
  *
- * Description: saves dogs name , age and owner 
+ * Description: saves dogs name , age and owner
  */
 
-typedef struct dog 
+typedef struct dog
 {
 	char *name;
 	float age;
