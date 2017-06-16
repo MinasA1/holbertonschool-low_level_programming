@@ -45,7 +45,8 @@ void print_all(const char * const format, ...)
 	default:
 		break;
 	}
-		printf(", ");
+		if (format[i])
+			printf(", ");
 	i++;
 	}
 	printf("\n");
