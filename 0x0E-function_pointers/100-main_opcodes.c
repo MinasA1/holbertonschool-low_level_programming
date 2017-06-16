@@ -7,7 +7,7 @@
  * Return - 1 for incorrect args 2 for negative bytes
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	unsigned int i;
 	/*int (*mem)();*/
@@ -24,7 +24,7 @@ int main (int argc, char *argv[])
 	}
 	/*mem = &main;*/
 	for (i = 0; i < atoi(argv[1]); i++)
-		printf("%.2x ",((unsigned char *)main)[i]);
+		printf("%.2x ", ((unsigned char *)main)[i]);
 	printf("\n");
 	return (0);
 }
