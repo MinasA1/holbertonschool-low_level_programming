@@ -26,5 +26,5 @@ int main(int argc, char *argv[])
 	for (i = 0; i < atoi(argv[1]); i++)
 		printf("%.2x ", ((unsigned char *)main)[i]);
 	printf("\n");
-	return (0);
+	exit(EXIT_SUCCESS);
 }
