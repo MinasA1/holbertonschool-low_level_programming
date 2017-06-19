@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * sum_them_all - returns the sum of all its parameters.
+ * print_numbers - returns the sum of all its parameters.
  * @seperator: pointer to string to be printed
  * @n: number of parameters
  *
- * Return: sum
+ * Return: void
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
