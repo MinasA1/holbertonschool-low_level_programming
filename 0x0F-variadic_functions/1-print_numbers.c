@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * print_numbers - returns the sum of all its parameters.
- * @seperator: pointer to string to be printed
+ * @separator: pointer to string to be printed
  * @n: number of parameters
  *
  * Return: void
