@@ -15,13 +15,15 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (new == NULL)
 		return (NULL);
 	new->n = n;
+	new->next = *head;
 	temp = *head;
-	for (i = 0; i < index; i++)
+	for (i = 0; i < idx -1; i++)
 	{
-		temp = temp->next;
 		if (temp->next == NULL)
 			return (NULL);
+		temp = temp->next;
 	}
-	new->next == temp->next;
+	new->next = temp->next;
+	temp->next = new;
 	return (new);
 }
