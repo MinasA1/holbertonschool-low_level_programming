@@ -8,11 +8,19 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned int i = 1u <<  (sizeof(unsigned int) * CHAR_BIT - 1);;
+	int i = (sizeof(n) * CHAR_BIT - 1), j = 0;
 
-	while (i > 0)
+	if (n == 0)
 	{
-		_putchar((n & i) ? '1' : '0');
-		i >>= 1;
+		_putchar('0');
+		return;
+	}
+	while (i >= 0)
+	{
+		if (((n >> i) & 1))
+			j=1;
+		_putchar(((n >> i) & 1) ? '1' : '\0');
+		_putchar(((((n >> i) & 1) == 0) & (j == 1)) ? '0' : '\0');
+		i--;
 	}
 }
