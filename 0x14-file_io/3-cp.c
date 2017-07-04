@@ -11,6 +11,7 @@ int main(int ac, char **av)
 {
 	int fdin, fdout, in, out;
 	char buff[1024];
+	mode_t perm = (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 
 	if (ac != 3)
 	{
@@ -23,7 +24,7 @@ int main(int ac, char **av)
 		dprintf(2, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
-	fdout = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	fdout = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, perm);
 	if (fdout == -1)
 	{
 		dprintf(2, "Error: Can't write to %s\n", av[2]);
