@@ -55,7 +55,7 @@ int main(int ac, char **av)
 	if (out == -1)
 	{
 		dprintf(2, "Error: Can't close fd %d\n", fdout);
-                exit(100);
+		exit(100);
 	}
 	return (0);
 }
