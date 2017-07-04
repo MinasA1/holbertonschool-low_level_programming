@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * ssize_t read_textfile -  reads a text file and prints it to stdout
+ * read_textfile -  reads a text file and prints it to stdout
  * @filename: name of file to read
  * @letters: number of letters to print
  * Return: returns num of letters in file or 0 if NULL, fail

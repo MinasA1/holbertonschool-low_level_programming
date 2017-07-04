@@ -9,17 +9,16 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int c, fd, i = 0;
-	ssize_t j = 0;
+	int c, fd, i = 0, j = 0;
 
 	while (text_content[i])
 		i++;
 	if (filename == NULL || filename[0] == '\0')
-		return (0);
-	fd = creat(filename, 0600);
+		return (-1);
+	fd = creat(filename, S_IRUSR | S_IWUSR);
 	if (fd == -1)
 	{
-		write(1, "fail to create\n", 16);
+		close(fd);
 		return (-1);
 	}
 	if (text_content == NULL || text_content[0] == '\0')
@@ -27,7 +26,7 @@ int create_file(const char *filename, char *text_content)
 	c = write(fd, text_content, i);
 	if (c == -1)
 	{
-		write(1, "fail to write\n", 15);
+		close(fd);
 		return (-1);
 	}
 	close(fd);
