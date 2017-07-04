@@ -9,13 +9,13 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int c, fd, i = 0, j = 0;
+	int c, fd, i = 0;
 
 	while (text_content[i])
 		i++;
 	if (filename == NULL)
 		return (-1);
-	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR11);
+	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
 	if (fd == -1)
 	{
 		return (-1);
@@ -32,6 +32,5 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 	close(fd);
-
-	return (j);
+	return (1);
 }
