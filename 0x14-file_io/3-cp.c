@@ -32,7 +32,7 @@ int main(int ac, char **av)
 		out = write(fdout, buff, in);
 		if (out == -1)
 		{
-			dprintf(2, "Error: Can't write to %s\n", av[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 			exit(99);
 		}
 		in = read(fdin, buff, 1024);
