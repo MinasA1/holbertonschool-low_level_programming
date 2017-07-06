@@ -39,11 +39,11 @@ int main(int ac, char **av)
 	}
 	in = close(fdin);
 	if (in == -1)
-		dprintf(2, "Error: Can't close fd %d\n", fdin), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdin), exit(100);
 	out = close(fdout);
 	if (out == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", fdout);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdout);
 		exit(100);
 	}
 	return (0);
