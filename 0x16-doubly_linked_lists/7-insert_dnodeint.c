@@ -6,7 +6,7 @@
  * @h: double pointer to list
  * @idx: index to insert new node
  * @n: value to add to new node
- * Return: pointer to new node, or NULL 
+ * Return: pointer to new node, or NULL
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
