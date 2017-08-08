@@ -1,6 +1,8 @@
 ## 0x17. C - Dynamic libraries
 #### 0.A library is not a luxury but one of the necessities of life
-Create the dynamic library libholberton.so containing all the functions listed below 'int _putchar(char c);
+Create the dynamic library libholberton.so containing all the functions listed below
+'''
+int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
 int _abs(int n);
@@ -19,6 +21,7 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
-char *_strstr(char *haystack, char *needle);'
+char *_strstr(char *haystack, char *needle);
+'''
 #### 1.Without libraries what have we? We have no past and no future
 Create a script that creates a dynamic library called liball.so from all the .c files that are in the current directory.
