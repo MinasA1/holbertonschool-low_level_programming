@@ -8,6 +8,7 @@
  *
  * @n: Integer stored in the node
  * @next: Pointer to the next element of the list
+ * @prev: pointer to prev element
  */
 typedef struct listint_s
 {
