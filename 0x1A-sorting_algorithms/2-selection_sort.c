@@ -4,6 +4,7 @@
  * selection_sort - sorting algorithm
  * @array: array to be sorted
  * @size: size of array
+ * Return - nothing
  */
 void selection_sort(int *array, size_t size)
 {
@@ -22,9 +23,9 @@ void selection_sort(int *array, size_t size)
 		}
 		if (k != i)
 		{
-			a = array[k]
-			array[k] = array[i];
-			array[i] = tmp;
+			a = array[i]
+			array[i] = array[k];
+			array[k] = tmp;
 			print_array(array, size);
 		}
 	}
