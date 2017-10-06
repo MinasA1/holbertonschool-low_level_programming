@@ -14,4 +14,4 @@ clean:
 	$(RM) -f *~ holberton
 oclean:
 	$(RM) $(OBJ)
-fclean:clean oclean;
+fclean:clean oclean
