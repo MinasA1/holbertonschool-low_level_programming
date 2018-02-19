@@ -12,9 +12,9 @@ int binary_search(int *array, size_t size, int value)
 	int j;
 	size_t mid, i;
 
-	mid = (size - 1) / 2;
 	if (!array || !size)
 		return (-1);
+	mid = (size - 1) / 2;
 	printf("Searching in array:");
 	for (i = 0; i < size; i++)
 		printf(" %d%c", array[i], (i < (size - 1)) ? ',' : '\n');
